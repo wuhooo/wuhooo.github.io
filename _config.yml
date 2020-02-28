@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: Gallien
+subtitle: '¿'
+description: '¿'
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: Gallien
+language: zh-CN
+timezone: 'Asia/shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -97,5 +97,9 @@ theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: ''
+deploy: 
+  type: git
+  repo:
+    github: git@github.com:wuhooo/wuhooo.github.io.git
+  branch:master
+
