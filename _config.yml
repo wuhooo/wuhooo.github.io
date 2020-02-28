@@ -4,11 +4,11 @@
 
 # Site
 title: Gallien's Notes
-subtitle: ''
-description: ''
+subtitle: whatever
+description: 你说是，那就是
 keywords:
 author: Gallien
-language: zh-Hans
+language: zh-CN
 timezone: 'Asia/shanghai'
 
 # URL
@@ -103,3 +103,10 @@ deploy:
     github: git@github.com:wuhooo/wuhooo.github.io.git
   branch: master
 
+symbols_count_time:
+   #文章内是否显示
+    symbols: false
+    time: false
+   # 网页底部是否显示
+    total_symbols: false
+    total_time: false
