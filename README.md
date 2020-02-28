@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/wuhooo/wuhooo.github.io.svg?branch=src)](https://travis-ci.org/wuhooo/wuhooo.github.io)
