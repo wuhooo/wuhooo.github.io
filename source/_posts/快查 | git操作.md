@@ -2,17 +2,19 @@
 title: 快查 | git操作
 date: 2020-02-28 14:33:43
 tags: git
-<!-- more -->
+descrption: 一些git的命令
 ---
+{% cq %} 为了搭这个博客学的，linus牛逼{% endcq %}
 
-
-###基本操作
+### 基本操作
 
 `git init`在当前目录初始化一个仓库
 
 `git add <file>`把<file>提交到暂存区
 
 `git commit -m "<description>"`把所有的暂存区提交到版本库，并添加注释
+
+<!--more-->
 
 `git status`查看当前仓库的状态
 
