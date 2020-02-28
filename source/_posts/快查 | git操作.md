@@ -5,7 +5,7 @@ tags: [git]
 categories: computer
 ---
 {% cq %} 为了搭这个博客学的，linus牛逼{% endcq %}
-
+<!--more-->
 ### 基本操作
 
 `git init`在当前目录初始化一个仓库
@@ -13,8 +13,6 @@ categories: computer
 `git add <file>`把<file>提交到暂存区
 
 `git commit -m "<description>"`把所有的暂存区提交到版本库，并添加注释
-
-<!--more-->
 
 `git status`查看当前仓库的状态
 
