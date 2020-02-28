@@ -1,7 +1,7 @@
 ---
-title: 快查 | git操作
+title: git操作
 date: 2020-02-28 14:33:43
-tags: [git]
+tags: [git,快查]
 categories: computer
 ---
 {% cq %} 为了搭这个博客学的，linus牛逼{% endcq %}
@@ -73,7 +73,10 @@ categories: computer
 `git check-ignore`查.gitignore文件中的问题  
 
 `git config --global alias.st status`让`git st`就能实现`git status`的功能  
-`git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`花里胡哨的log配置  
+```
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
+花里胡哨的log配置  
 ```
 $ cat .gitconfig
 [alias]
