@@ -1,8 +1,8 @@
 ---
 title: 快查 | git操作
 date: 2020-02-28 14:33:43
-tags: git
-descrption: 一些git的命令
+tags: [git]
+categories: computer
 ---
 {% cq %} 为了搭这个博客学的，linus牛逼{% endcq %}
 
