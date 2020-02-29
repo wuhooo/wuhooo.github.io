@@ -6,7 +6,3 @@ then a icon
 
 now in branch src.
 
-git
-  repo: 
-    github: git@github.com:wuhooo/wuhooo.github.io.git
-  branch: master
