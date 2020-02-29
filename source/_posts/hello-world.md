@@ -3,7 +3,7 @@ title: Hello World
 tags: [hexo]
 categories: 建站
 ---
-&#123;% cq % &#125;建站过程说明，闲的蛋疼的时候用中文补完&#123;% endcq % &#125;
+<blockquote class="blockquote-center">建站过程说明，闲的蛋疼的时候用中文补完</blockquote>
 
 <!--more-->
 

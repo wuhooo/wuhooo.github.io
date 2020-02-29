@@ -4,7 +4,7 @@ date: 2020-02-28 14:33:43
 tags: [git,快查]
 categories: computer
 ---
-&#123;% cq % &#125; 为了搭这个博客学的，linus牛逼&#123;% endcq % &#125;
+<blockquote class="blockquote-center">为了搭这个博客学的，linus牛逼</blockquote>
 <!--more-->
 ### 基本操作
 
