@@ -9,7 +9,7 @@ description: 你说是，那就是
 keywords:
 author: Gallien
 language: zh-CN
-timezone: 'Asia/shanghai'
+timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
