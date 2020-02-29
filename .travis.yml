@@ -20,12 +20,9 @@ after_script:
   - git config user.email "gsylzh@163.com" #{Github账户邮箱}
   - git add .
   - git commit -m "Site Update:`TZ=':Asia/Shanghai' date +' %Y-%m-%d %H:%m:%S'`"
-  - git push --force --quiet "https://${token}@${GH_REF}" master:master
+  - git push --force --quiet "https://${token}@github.com/wuhooo/wuhooo.github.io.git" master:master
 # E: Build LifeCycle
 
 branches:
   only:
     - src #{Hexo源码分支名称}
-env:
- global:
-   - GH_REF: github.com/wuhooo/wuhooo.github.io.git #{仓库地址}
