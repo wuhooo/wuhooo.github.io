@@ -6,3 +6,4 @@ then a icon
 
 now in branch src.
 
+try new config for Travis CI
