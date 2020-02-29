@@ -98,11 +98,7 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
-  type: git
-  repo: 
-    github: git@github.com:wuhooo/wuhooo.github.io.git
-  branch: master
-
+  type: 
 symbols_count_time:
    #文章内是否显示
     symbols: false

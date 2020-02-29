@@ -90,3 +90,4 @@ $ cat .gitconfig
 ```
 改过的配置都在.gitconifg中，可以用cat查看  
 
+`git remote remove <name>` 删除远程服务器连接
