@@ -2,7 +2,8 @@
 title: Hello World
 tags: [hexo]
 categories: 建站
-date: 2020-02-28 14:33:43
+date: 2020-02-28 14:00:00
+updated: 2020-02-28
 ---
 <blockquote class="blockquote-center">建站过程说明，闲的蛋疼的时候用中文补完</blockquote>
 

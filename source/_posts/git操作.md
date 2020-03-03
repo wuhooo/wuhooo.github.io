@@ -3,6 +3,7 @@ title: git操作
 date: 2020-02-28 14:33:43
 tags: [git,快查]
 categories: computer
+updated: 2020-02-28
 ---
 <blockquote class="blockquote-center">为了搭这个博客学的，linus牛逼</blockquote>
 <!--more-->
