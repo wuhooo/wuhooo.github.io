@@ -5,6 +5,8 @@ tags: [python,快查]
 categories: computer
 updated: 2020-03-12
 ---
+<blockquote class="blockquote-center">Life is short, you need Python!</blockquote>
+<!--more-->
 
 [视频地址](https://www.bilibili.com/video/av29837702?p=1)  
 
