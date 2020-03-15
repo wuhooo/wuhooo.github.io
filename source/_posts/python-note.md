@@ -8,10 +8,13 @@ updated: 2020-03-16
 ---
 <blockquote class="blockquote-center">Life is short, you need Python!</blockquote>
 <!--more-->
-[视频地址](https://www.bilibili.com/video/av29837702?p=1)  
-[>_<]:
-    updated: 2020-03-16 89-94p
+<!--
+    updated:
+    2020-03-16 89-94p
     2020-03-12
+-->
+[视频地址](https://www.bilibili.com/video/av29837702?p=1)  
+
 ## 第一章 计算机基础知识
 
 #### 课程介绍
