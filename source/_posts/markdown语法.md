@@ -5,10 +5,11 @@ tags: [快查,Markdown,计算机]
 categories: computer
 updated: 2020-03-18
 ---
-[](
-    updated: 2020-03-18 初稿，加了大部分内容
+[>_<]:
+    updated: 
     2020-02-29 基本无内容
-)
+    2020-03-18 初稿，加了大部分内容
+
 <blockquote class="blockquote-center">速查用的</blockquote>
 <!--more-->
 
