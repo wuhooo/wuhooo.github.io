@@ -5,14 +5,13 @@ tags: [快查,Markdown,计算机]
 categories: computer
 updated: 2020-03-18
 ---
-[>_<]:
+<blockquote class="blockquote-center">速查用的</blockquote>
+<!--more-->
+<!--
     updated: 
     2020-02-29 基本无内容
     2020-03-18 初稿，加了大部分内容
-
-<blockquote class="blockquote-center">速查用的</blockquote>
-<!--more-->
-
+-->
 # 简介
 本文将做一个markdown语法的总结，形式是先说效果，然后展示代码，最后再展示与代码相对应的实际效果。实际效果会因用啥渲染而不同，但是大同小异。
 
