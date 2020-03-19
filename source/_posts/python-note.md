@@ -3,13 +3,15 @@ title: python-note
 date: 2020-03-12 20:49:23
 tags: [python,快查]
 categories: computer
-updated: 2020-03-16 
+updated: 2020-03-20
 
 ---
 <blockquote class="blockquote-center">Life is short, you need Python!</blockquote>
 <!--more-->
 <!--
     updated:
+    
+    2020-03-20 111-120p 以下的记录不完整，以上的完整
     2020-03-16 89-94p
     2020-03-12
 -->
@@ -1063,7 +1065,7 @@ except Exception: # Exception是所有异常的父类
 
 ## 学习日志
  
-｜20200228｜         1-5p   ｜
+｜20200228         ｜         1-5p   ｜
 ｜20200301｜        6-22p   ｜
 ｜20200302｜3:25am 23-30p   ｜
 ｜20200303-06:35am｜31-40p  ｜
