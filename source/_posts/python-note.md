@@ -1,15 +1,14 @@
 ---
-title: python-note
+title: Python-note
 date: 2020-03-12 20:49:23
-tags: [python,快查]
+tags: [Python,快查]
 categories: computer
-updated: 2020-03-20
-
 ---
 <blockquote class="blockquote-center">Life is short, you need Python!</blockquote>
 <!--more-->
 <!--
     updated:
+            每章代码总结
     2020-03-20 111-120p 以下的记录不完整，以上的完整
     2020-03-16 89-94p
     2020-03-12
@@ -18,7 +17,7 @@ updated: 2020-03-20
 [视频地址](https://www.bilibili.com/video/av29837702?p=1)  
 
 ## 第一章 计算机基础知识
-
+本文代码请参考每章节开头的代码块，文章中的代码的英文单引号会被网站显示优化为中文的单引号。
 ### 课程介绍
     Python基础视频教程  
     李立超讲的
@@ -97,7 +96,15 @@ byte 字节 = 8 bit
     俺不用，俺用VScode
 
 ## 第二章 Python入门
+```Python
+print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+# sep表示两个objects之间默认用空格隔开
+# end表示结尾默认是个换行符
+# file表示默认输出在命令行
 
+input([prompt])
+# 返回值为输入的字符串，()里的参数是提示输入的词
+```
 ### 什么是计算机语言
 计算机用的语言
 - 机器语言
@@ -323,6 +330,18 @@ print(c)
 自己找表然后补上来，不用背，不记得的时候用括号就完事了
 
 ## 第三章 流程控制语句
+```Python
+while True:
+    if a = 1:
+        break       # 退出循环
+    if a = 2:
+        continue    # 退出当次循环
+else:
+    pass
+
+for a in range(1:11:2):     # in后面要跟一个序列
+    print(a)
+```
 - Python代码是自上而下执行的  
 - 通过流程控制可以改变程序的执行顺序，也能让指定代码反复执行多次
 
@@ -352,7 +371,135 @@ print(c)
   - 先过，占个位置，循环功能不确定的时候可以先写
 
 ## 第四章 序列
+```Python
+# 列表
+list_a = []   # 可变
 
+# 列表的基操
+list_a.append(s)
+# 把s元素添加到最后
+list_a.insert(i,s)
+# 把s插入到a的i位置
+list_a.extend(t)
+# 把序列t加到序列a的末尾
+list_a.clear()
+# 清空序列，用了后序列a就变成[]
+list_a.pop(i)
+# 删除索引为i的元素，并返回它的值
+# 不填参数的话默认删除最后一个元素
+list_a.remove(s)
+# 删除指定元素s，如果有多个s，则删掉遇上的第一个s
+list_a.reverse()
+# 用来反转列表，颠倒顺序
+list_a.sort()
+# 对列表中的元素进行排序，字母、数字顺序，默认升序，如果想要降序排列`(reverse = True)`
+list_a.index("ok",3)
+# 在list中查找"ok"这个元素第一次出现的位置，从第三个位置开始找
+
+
+
+
+# 元组
+tuple_a = ()  # 不可变
+
+
+# 序列的解包
+# 解包 c 会变成一个列表 [3 , 4 ,5]
+a , b , *c, d = (1,2,3,4,5,6)
+
+
+
+
+# 字典 
+dict_a = {}
+
+# 字典的基本操作
+len(dict_a)
+# 返回字典的键值对的个数
+dict_a.get('name'[,default])
+# 如果'name'不存在，则返回一个None
+dict_a.setdefault(key[,value])
+# 如果key存在，则返回它的值，如果不存在则添加
+dict_a.update(dict_b)
+# 把字典dict_b中的键值对添加到dict_a中，如果已经存在，则替换
+
+# 字典删除操作
+del dict_a[key]
+# 删除某键值对
+dict_a.popitem()
+# 可以随机删除字典中的一个键值对，一般都是最后一个键值对，并返回一个二元元组
+# 删空字典会报错
+dict_a.pop(key[,default])
+# 返回被删除的value
+# 如果删除不存在的key，会报错,但如果指定了默认值，就不会报错，会返回默认值
+dict_a.clear()
+# 删除字典中的所有项
+dict_a.copy
+# 浅复制，字典中的字典（可变对象）还是相互联系的，也就是修改一个会影响另一个
+# dict_b=dict_a.copy()
+# dict_b跟dict_a一样，但是有两个对象，修改一个对象不会影响另一个对象
+
+# 字典的遍历
+dict_a.keys()
+# 返回一个特殊序列(dict_list)，序列中会保存字典中所有的键
+# for k in dict_a.keys():
+#   print(k,dict_a[k])
+dict_avalues()
+# for v in dict_a.values():
+#   print(v)
+dict_a.items
+# 返回一个双值序列
+# for k,v in dict_a.items:
+#   print(k, '=' ,v)
+
+
+
+
+# 集合
+# 只能存不可变的对象
+# 无序
+# 不重复
+set_a = {'a','b'}
+set_b = set()
+# 创建空集
+# 将序列和字典转换为集合，字典的话只会把键转过来
+
+# 基操
+len()
+set_a.add(10)
+# 向set_a中加元素
+set_a.update(set_b)
+# 把set_b中的元素加到set_a里
+# set_a可以是序列或者字典，字典的话只会加key
+# set_a.pop()
+#随机删除一个集合中的元素，并将它返回
+set_a.remove()
+# 删除指定元素
+set_a.clear()
+# 让他变成空集
+set_a.copy
+# 浅复制
+
+
+
+
+# 集合运算
+s1 & s2
+# 交集
+# 不会改变s1与s2，而是返回它们的交集
+s1 | s2
+# 并集
+s1 - s2
+# 差集，得到只在s1中存在，但不在s2中的元素的集合
+s1 ^ s2
+# 亦或集，得到：并集 - 交集
+s1 <= s2
+s1 < s2
+s1 > s2
+s1 >= s2
+# 检查一个集合是否是另一个集合的子集、真子集
+# 返回True 或者 False
+```
 ### 列表(list)
 - []
   - 列表是Python中的一个对象
@@ -398,34 +545,6 @@ print(c)
     - 在3的位置插入元素
   4. del a[:]
   5. a[:] = []
-
-
-
-a.append(s)
-把s元素添加到最后
-
-a.insert(i,s)
-把s插入到a的i位置
-
-a.extend(t)
-把序列t加到序列a的末尾
-
-a.clear()
-清空序列，用了后序列a就变成[]
-
-a.pop(i)
-删除索引为i的元素，并返回它的值
-不填参数的话默认删除最后一个元素
-
-a.remove(s)
-删除指定元素s，如果有多个s，则删掉遇上的第一个s
-
-a.reverse()
-用来反转列表，颠倒顺序
-
-a.sort()
-对列表中的元素进行排序，字母、数字顺序，默认升序，如果想要降序排列`(reverse = True)`
-
 ### 遍历列表
 
 可以用 while 循环
@@ -526,7 +645,7 @@ for 变量 in 序列:
   - 如果没有那个key的话会增加一个key-value
 - setdefault(key[,value])
   - 如果key存在，则返回key的值
-  - 如果key不存在，则添加一堆key-value
+  - 如果key不存在，则添加一对key-value
 - d.update([other])
   - 把other字典中的东西全都合进d中
   - 如果重复，则替换掉
@@ -617,7 +736,7 @@ for 变量 in 序列:
 ### 函数简介（function）
 - 函数也是一个对象  
 - 对象是内存中专门用来存储数据的一块区域
-- 函数可以用来暴怒一些可执行的代码
+- 函数可以用来保存一些可执行的代码
   ```
   def 函数名([形参1,形参2,形参3]):
     代码块
