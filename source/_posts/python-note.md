@@ -732,7 +732,33 @@ for 变量 in 序列:
 - >=
 
 ## 第五章 函数
+````Python
+def func(a = 10, b:int, *c, **d):
+# 期待b是整数（不强制），c接收所有剩下的位置参数（保存为元组），d接收所有其他的关键字参数（保存为字典）
+    '''
+    这里可以编写函数的帮助
+    '''
+    print(f'{a} + {b} = {a+b}')
+    return a+b
 
+
+# 装饰器的编写
+def begin_end(inner):
+    def fn(*arg, **kwargs):
+        print('程序开始了')
+        m = inner(*arg, **kwargs)
+        print('程序结束了')
+        return m
+    return fn
+
+
+# 装饰器的使用
+@begin_end
+func(10,20)
+
+
+lambda 参数列表 : 返回值
+````
 ### 函数简介（function）
 - 函数也是一个对象  
 - 对象是内存中专门用来存储数据的一块区域
