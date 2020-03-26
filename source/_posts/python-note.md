@@ -899,7 +899,55 @@ def一个函数前一行加：
 就可以加装饰器了，可以加好几个装饰器
 ```
 ## 第六章 对象（Object）
+````Python
+class Person([父名]):
+    number = 0
+    def __init__(self, name, age, gender):
+        self._name = name
+        self._age = age
+        self._gender = gender
 
+
+    # 不带装饰器的getter与setter
+    def get_age(self):              # getter
+        return self._age
+    def set_age(self,age):          # setter
+        if age <= 0:
+            raise Exception('年龄只能是正数')
+        else:
+            self._age = age
+    
+    # 带装饰器的getter与setter
+    @ property
+    def age(self):                   #函数名要跟假属性名一致
+        print("get执行了")
+        return self._age
+    @name.setter                     # .setter前要跟假属性名一致
+    def age(self,name):              # 函数名要跟假属性名一致
+        print("setter调用了")
+        self._age = age
+
+
+issubclass(a,b)
+# 返回 True 或者 False，检查 a 是不是 b 的子类
+
+super()
+# 表示父类，具体没用过，用过再来补上
+
+类名.__bases__
+# 获取某类的所有父亲
+
+# 多态，具有 name 属性的类都能使用
+def say_hello(obj):
+    print("你好 %s"%obj.name)
+
+# import用法
+import 模块名 (as 模块别名)
+from 模块名 import 变量,变量 (as 别名)
+
+if __name__ == '__main__' :
+# 用来测试的代码，表示当这个文件是主文件被运行时
+````
 ### 什么是对象？
 - 对象是内存中专门用来存储数据的一块区域
 - 对象中可以存放各种数据（数字、布尔值、代码）
