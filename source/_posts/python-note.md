@@ -1216,7 +1216,44 @@ __pycache__是模块的缓存文件
 Python自带了标准库，提供很多功能，具体参考文档。
 
 ## 第七章 异常和文件
+````python
+# try语句，试错用的
+try:
+    代码块（可能出现错误的语句）
+except:
+    代码块（出现错误后的处理方式）
+else:
+    代码块（没出错时要执行的语句）
+finally:
+    代码块（不管异不异常都会执行）
 
+
+# 报错功能
+raise Exception('两个参数中不能有负数')
+
+
+# 打开文件
+f = open('text.txt','w')
+a = f.readline()
+b = f.readlines()
+tell()                  # 返回值是当前读取到的位置  
+seek()                  # 可以修改当前读取的位置，单位是字节
+f.close()
+
+
+with open('123.txt') as file_obj
+        代码块 # 其中file_obj是文件的对象
+
+
+import os
+a = os.listdir()    # 获取指定目录结构，默认为当前目录
+b = os.getcwd()     # 获取当前所在目录
+c = os.chedir()     # 变换当前目录
+os.mkdir('aa')      # 在当前目录下创建一个名字为aa的目录
+os.rmdir('aa')      # 删除当前目录下名为aa的目录
+os.remove('aa.txt') # 删除当前目录下名为aa.txt的文件
+os.rename('旧名字','新名字')   # 把旧名字文件改成新名字，也可以用来剪切文件
+````
 ### 异常
 程序在运行过程当中，不可避免的会出现一些错误，比如：
 - 使用了没有赋值过的变量
